@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selectors Practice</title>
+    <style>
+        body {
+            background-color: rgb(245, 245, 245);
+            font-family: Arial, Helvetica, sans-serif;
+            max-width: 660px;
+
+            /* all sides */
+            margin: 10px;
+            /* top/bottom left/right */
+            margin: 10px auto;
+            /* top left/right bottom */
+            margin: 10px auto 20px;
+            /* top right bottom left */
+            margin: 0 auto 20px auto;
+
+            /* specific side */
+            margin-top: 40px;
+        }
+
+        /* Task 1 */
+        h1 {
+            text-align: center;
+            color: blueviolet;
+        }
+
+        h2 {
+            color: darkslategray;
+        }
+
+        .styled-text {
+            font-style: italic;
+            font-size: 14px;
+        }
+
+        /* Task 2 */
+        .card {
+            font-size: 48px;
+            background-color: lightgray;
+            padding: 6px 10px;
+        }
+
+        .red {
+            color: rgb(150, 7, 12);
+        }
+    </style>
+</head>
+
+<body>
+    <!-- abbreviation: 
+        emmet:       tag            -> <tag></tag> 
+        add class:   tag.selected   -> <tag class="selected"></tag>
+        add id:      tag#main       -> <tag id="main"></tag>
+        add child:   tag>span       -> <tag><span></span></tag> 
+        add content: tag{hello}     -> <tag>hello</tag>
+        multiple:    tag*3          -> <tag></tag><tag></tag><tag></tag>
+    -->
+    <h1>Romeo and Juliet</h1>
+
+    <h2>ACT 1</h2>
+
+    <h2>PROLOGUE</h2>
+
+    <p>
+        Two households, both alike in dignity,<br>
+        In fair Verona, where we lay our scene,<br>
+        From ancient grudge break to new mutiny,<br>
+        Where civil blood makes civil hands unclean.<br>
+        From forth the fatal loins of these two foes<br>
+        A pair of star-cross'd lovers take their life;<br>
+        Whose misadventured piteous overthrows<br>
+        Do with their death bury their parents' strife.<br>
+        The fearful passage of their death-mark'd love,<br>
+        And the continuance of their parents' rage,<br>
+        Which, but their children's end, nought could remove,<br>
+        Is now the two hours' traffic of our stage;<br>
+        The which if you with patient ears attend,<br>
+        What here shall miss, our toil shall strive to mend.<br>
+    </p>
+
+    <h2>SCENE I. Verona. A public place.</h2>
+
+    <p class="styled-text">Enter SAMPSON and GREGORY, of the house of Capulet, armed with swords and bucklers</p>
+
+    <h2>SAMPSON</h2>
+
+    <p>Gregory, o' my word, we'll not carry coals.</p>
+
+    <h2>GREGORY</h2>
+
+    <p>No, for then we should be colliers.</p>
+
+    <hr>
+    <!-- ♣♦♥♠ -->
+
+    <h2>Player 1:</h2>
+    <p>
+        <span class="card">6♣</span>
+        <span class="card red">7♥</span>
+        <span class="card red">K♥</span>
+        <span class="card">Q♠</span>
+        <span class="card red">9♦</span>
+        <span class="card red">8♦</span>
+    </p>
+
+    <h2>Player 2:</h2>
+    <p>
+        <span class="card">10♣</span>
+        <span class="card red">A♦</span>
+        <span class="card">Q♠</span>
+        <span class="card">J♠</span>
+        <span class="card red">J♦</span>
+        <span class="card red">6♦</span>
+    </p>
+</body>
+
+</html>
