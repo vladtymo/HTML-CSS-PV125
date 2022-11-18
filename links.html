@@ -42,7 +42,7 @@
         /* Link pseudo classes */
         /* :link - not visited link */
         nav a:link {
-            color: red;
+            color: rgb(205, 151, 255);
         }
 
         /* :link - visited link */
@@ -58,6 +58,11 @@
         /* active - on click */
         nav a:active {
             font-size: 120%;
+        }
+
+        /* image middle align */
+        a img {
+            vertical-align: middle;
         }
     </style>
 </head>
@@ -83,7 +88,10 @@
             </li>
             <li>
                 <!-- phone -->
-                <a href="tel:+380952293557">Phone Me</a>
+                <a href="tel:+380952293557">
+                    <img src="./images/phone.png" alt="Phone">
+                    Phone Me
+                </a>
             </li>
         </ul>
     </nav>
